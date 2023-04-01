@@ -1,0 +1,51 @@
+@import '../../mixins.scss';
+
+.header {
+  background-color: #fff;
+  height: 50px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  @include OnDesktop {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 0;
+    height: 120px;
+    width: 1200px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #e2432a;
+    line-height: 50px;
+    font-size: 24px;
+
+    @include OnDesktop {
+      text-align: center;
+      font-size: 36px;
+      border-bottom: 2px solid #e2432a;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__currency {
+    display: flex;
+    flex-direction: column;
+
+    @include OnDesktop {
+      align-items: center;
+    }
+  }
+
+  &__usd {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  &__eur {
+    margin: 0;
+    font-size: 18px;
+  }
+}

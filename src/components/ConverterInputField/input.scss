@@ -1,0 +1,21 @@
+.input {
+    display: flex;
+    justify-content: space-between;
+
+    &__sum {
+        margin-left: 20px;
+        height: 30px;
+        font-size: 30px;
+        min-width: 20px;
+        width: 100%;
+        font-weight: bold;
+        border: none;
+        outline: 0;
+    }
+
+    &__currency {
+        margin-right: 20px;
+        border: none;
+        outline: 0;
+    }
+}
