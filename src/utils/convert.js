@@ -8,5 +8,5 @@ export function convert(
     return +(
         (inputValue * exchangeRates[outputCurrency]) /
         exchangeRates[inputCurrency]
-    ).toFixed(2);
+    ).toFixed(5);
 }
