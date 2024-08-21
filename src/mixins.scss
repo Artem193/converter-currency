@@ -1,3 +1,9 @@
+@mixin OnSmallScreen {
+  @media (min-width: 401px) and (max-width: 1023px) {
+    @content
+  }
+};
+
 @mixin OnDesktop {
   @media (min-width: 1024px) {
     @content

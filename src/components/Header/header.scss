@@ -20,7 +20,11 @@
     margin: 0;
     color: #e2432a;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 15px;
+
+    @include OnSmallScreen {
+      font-size: 24px;
+    }
 
     @include OnDesktop {
       text-align: center;
@@ -41,11 +45,21 @@
 
   &__usd {
     margin: 0;
-    font-size: 18px;
+    line-height: 25px;
+    font-size: 12px;
+
+    @include OnSmallScreen {
+      font-size: 18px;
+    }
   }
 
   &__eur {
     margin: 0;
-    font-size: 18px;
+    line-height: 25px;
+    font-size: 12px;
+
+    @include OnSmallScreen {
+      font-size: 18px;
+    }
   }
 }
